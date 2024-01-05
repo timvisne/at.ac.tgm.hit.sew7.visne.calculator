@@ -30,12 +30,6 @@ public class MainActivity extends AppCompatActivity {
         RadioGroup radG = findViewById(R.id.radioGroup);
         radG.setEnabled(false);
 
-        for(int i = 0; i < rg1.getChildCount(); i++){
-            ((RadioButton)rg1.getChildAt(i)).setEnabled(false);
-        }
-        RadioGroup radG = findViewById(R.id.radioGroup);
-        radG.setEnabled(false);
-
         for (int i = 0; i < radG.getChildCount(); i++) {
             radG.getChildAt(i).setEnabled(false);
         }
