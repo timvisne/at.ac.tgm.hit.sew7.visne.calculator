@@ -26,6 +26,19 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        RadioGroup radG = findViewById(R.id.radioGroup);
+        radG.setEnabled(false);
+
+        for(int i = 0; i < rg1.getChildCount(); i++){
+            ((RadioButton)rg1.getChildAt(i)).setEnabled(false);
+        }
+        RadioGroup radG = findViewById(R.id.radioGroup);
+        radG.setEnabled(false);
+
+        for (int i = 0; i < radG.getChildCount(); i++) {
+            radG.getChildAt(i).setEnabled(false);
+        }
     }
     public void toggle(View view) {
         RadioGroup radG = findViewById(R.id.radioGroup);
