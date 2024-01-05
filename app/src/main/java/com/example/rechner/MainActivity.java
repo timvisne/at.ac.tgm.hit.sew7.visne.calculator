@@ -28,14 +28,30 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
     public void toggle(View view) {
-        RadioGroup radio = findViewById(R.id.radioGroup);
-        int radioID = radio.getCheckedRadioButtonId();
-
+        RadioGroup radG = findViewById(R.id.radioGroup);
+        int radioID = radG.getCheckedRadioButtonId();
+        RadioButton radB = findViewById(radioID);
+        String choice = radB.getText().toString();
 
         EditText t1 = findViewById(R.id.num1);
         EditText t2 = findViewById(R.id.num2);
         int n1 = Integer.parseInt(t1.getText().toString());
         int n2 = Integer.parseInt(t2.getText().toString());
+        double sol = 0;
+        switch(choice) {
+            case "+":
+                sol = n1 + n2; break;
+            case "_":
+                sol = n1 - n2; break;
+            case "*":
+                sol = n1 * n2; break;
+            case "/":
+                sol = (double) n1 / n2; break;
+            default:
+                Log.d("Error", "Error");
+        }
+        TextView v2 = findViewById(R.id.sum);
+        v2.setText(String.valueOf(sol));
 
 
 
