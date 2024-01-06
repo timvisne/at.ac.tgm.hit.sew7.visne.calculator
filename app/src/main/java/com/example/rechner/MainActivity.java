@@ -32,6 +32,15 @@ public class MainActivity extends AppCompatActivity {
         for (int i = 0; i < radG.getChildCount(); i++) {
             radG.getChildAt(i).setEnabled(false);
         }
+
+        TextView v = findViewById(R.id.sum);
+        v.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View view, MotionEvent motionEvent) {
+                ((TextView) v).setText("0");
+                return true;
+            }
+        });
     }
 
     @Override
