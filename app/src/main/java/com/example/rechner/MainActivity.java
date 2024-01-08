@@ -78,8 +78,12 @@ public class MainActivity extends AppCompatActivity {
             default:
                 Log.d("Error", "Error");
         }
+
         TextView v2 = findViewById(R.id.sum);
         v2.setText(String.valueOf(sol));
+
+        if(sol < 0) v2.setTextColor(Color.parseColor("#ff0000"));
+        else v2.setTextColor(Color.parseColor("#000000"));
 
 
 
