@@ -1,5 +1,7 @@
 package com.example.rechner;
-
+/**
+ *
+ */
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -17,9 +19,9 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 
 /**
- * Das ist die mainactivity-class hier wird die Logik für Android programmiert
- * @version 2023-09-07
- * @author Julian Neuwirth
+ * Die Software für die App
+ * @version 2024-01-08
+ * @author Timur Visne
  */
 public class MainActivity extends AppCompatActivity {
     @Override
